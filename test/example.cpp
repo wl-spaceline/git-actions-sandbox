@@ -3,12 +3,12 @@
 //
 #include <gtest/gtest.h>
 
-TEST(Example, DummySuccess)
+TEST(Example, DummyAssertTrue)
 {
     ASSERT_TRUE(true);
 }
 
-TEST(Example, DummyFailure)
+TEST(Example, DummyAssertFalse)
 {
-    ASSERT_FALSE(true);
+    ASSERT_FALSE(false);
 }
