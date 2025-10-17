@@ -10,5 +10,5 @@ TEST(Example, DummySuccess)
 
 TEST(Example, DummyFailure)
 {
-    ASSERT_FALSE(false);
+    ASSERT_FALSE(true);
 }
