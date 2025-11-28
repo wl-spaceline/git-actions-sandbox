@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-24.04
     container:
       image: ghcr.io/wl-spaceline/build-dev-action-cont:latest
-      options: user runner
+      options: --user runner
       credentials:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
