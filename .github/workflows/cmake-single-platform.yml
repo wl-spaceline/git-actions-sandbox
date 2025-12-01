@@ -19,7 +19,7 @@ jobs:
     # See: https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix
     runs-on: ubuntu-24.04
     container:
-      image: ghcr.io/wl-spaceline/build-dev-action-cont:latest
+      image: ghcr.io/wl-spaceline/build-dev-action-cont:v1.1.0
       options: --user runner
       credentials:
         username: ${{ github.actor }}
