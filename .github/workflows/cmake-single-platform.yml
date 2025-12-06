@@ -20,7 +20,8 @@ jobs:
     runs-on: ubuntu-24.04
     container:
       # v2.0.0 for amr64
-      image: docker pull ghcr.io/wl-spaceline/build-dev-action-cont:v2.0.0
+      image: docker pull ghcr.io/wl-spaceline/build-dev-action-cont:v2.0.0@sha256:c050e3b21855ad5978de010033df4afcacada4902f6dff83dc1dab1f134dfb9c
+      options: --user runner
       credentials:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
