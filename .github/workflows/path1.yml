@@ -1,13 +1,16 @@
 name: Run on path1
 on:
   push:
+    branches:
+      - 'main'
     paths:
-      - run_path_1/**
-#  pull_request:
-#    branches:
-#      - main
-#    paths:
-#      - run_path_1/**
+      - 'run_path_1/**'
+  pull_request:
+    branches:
+      - 'main'
+    paths:
+      - 'run_path_1/**'
+
 jobs:
   list_files:
     name: List file on folder 1
