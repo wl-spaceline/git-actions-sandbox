@@ -1,0 +1,22 @@
+name: Run on path2
+on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - 'run_path_2/**'
+
+jobs:
+  list_files:
+    name: List file on folder 2
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checking out repo
+        uses: actions/checkout@v5
+
+      - name: "List files on folder 2"
+        run: ls -la run_path_2
+
+
+
