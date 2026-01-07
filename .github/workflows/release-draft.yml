@@ -1,0 +1,12 @@
+name: release-draft.yml
+on:
+  release:
+    types:
+      - unpublished
+
+jobs:
+  dummy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello
+        run: echo "Hello relesase"
