@@ -2,7 +2,7 @@ name: release-draft.yml
 on:
   release:
     types:
-      - unpublished
+      - created
 
 jobs:
   dummy:
