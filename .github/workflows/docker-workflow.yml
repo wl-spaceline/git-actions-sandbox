@@ -1,5 +1,9 @@
 name: Action CI
-on: [push]
+on:
+  push:
+    paths-ignore:
+      - run_path_*/**
+
 jobs:
     ci:
       runs-on: ubuntu-latest
