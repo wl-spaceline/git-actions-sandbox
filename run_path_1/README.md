@@ -14,3 +14,5 @@ Remove push on branch...
 Adding branches and PR again on path1 workflow
 
 I expect to run path1 workflow **ONLY**
+
+Why it runs also cmake workflow???
